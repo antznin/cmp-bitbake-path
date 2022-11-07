@@ -87,7 +87,7 @@ source._dirnames_in_cwd = function (self, params, option, callback)
       break
     end
     if fs_type == 'directory' then
-      dirnames[i] = name
+      dirnames[i] = dirname .. '/' .. name
     end
     i = i + 1
   end
